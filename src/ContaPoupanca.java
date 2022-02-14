@@ -1,33 +1,17 @@
-public class ContaPoupanca {
-    private int agencia;
-    private int numero;
-    private double saldo;
+public class ContaPoupanca extends Conta{
 
-    public void sacar(){
+    @Override
+    public void sacar(double valor) {
 
     }
 
-    public void depositar(){
+    @Override
+    public void depositar(double valor) {
 
     }
 
-    public void transferir(){
+    @Override
+    public void transferir(double valor, Conta contaDestino) {
 
-    }
-
-    public int getAgencia() {
-        return agencia;
-    }
-
-    public int getNumero() {
-        return numero;
-    }
-
-    public double getSaldo() {
-        return saldo;
-    }
-
-    public void setSaldo(double saldo) {
-        this.saldo = saldo;
     }
 }
